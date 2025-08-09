@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Formwork Ops Manager</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b0d10">
+  <link rel="stylesheet" href="style.css">
+  <script defer type="module" src="app.js"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Formwork Ops Manager</h1>
+    <nav id="nav"></nav>
+    <div class="row">
+      <button class="btn small ghost" id="btn-backup">Backup</button>
+      <button class="btn small ghost" id="btn-restore">Restore</button>
+      <button class="btn small ghost" id="btn-reset">Reset</button>
+    </div>
+  </header>
+  <main id="app" class="container"></main>
+  <footer class="footer small">
+    <span>Offline-ready PWA. Data is stored locally in your browser. Export backups regularly.</span>
+  </footer>
+  <input id="file-restore" type="file" accept="application/json" class="hidden"/>
+</body>
+</html>
